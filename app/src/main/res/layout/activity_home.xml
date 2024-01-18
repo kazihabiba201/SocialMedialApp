@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+    android:background="#F5F6FB"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:title="Bance"
+            app:titleTextColor="@color/purple_700">
+
+            <ImageView
+                android:id="@+id/Home_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_220sdp"
+                android:src="@drawable/ic_notifcation"
+
+                >
+
+            </ImageView>
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_700"
+            android:backgroundTint="@color/white"
+            app:itemRippleColor="@color/white"
+            app:itemBackground="@color/white"
+app:itemIconSize="@dimen/_20sdp"
+
+            app:itemIconTint="@color/purple_700"
+            app:itemTextColor="@color/purple_700"
+            app:menu="@menu/bottom_navigation" />
+
+    </LinearLayout>
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="@dimen/_20sdp"
+        android:orientation="vertical">
+     <com.facebook.ads.NativeAdLayout
+         android:id="@+id/native_banner_ad_container"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true" />
+     <!--  <androidx.cardview.widget.CardView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:elevation="@dimen/_20sdp"
+            app:cardElevation="@dimen/_20sdp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="#F5F5F6"
+            android:layout_width="@dimen/_110sdp"
+            android:outlineProvider="background"
+            app:cardCornerRadius="@dimen/_10sdp"
+            android:layout_height="@dimen/_80sdp"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:background="@color/black"
+                android:layout_gravity="center"
+                app:cardCornerRadius="@dimen/_10sdp">
+                <ImageView
+                    android:id="@+id/addStory"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_launcher_foreground"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily Update"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+           android:layout_margin="10dp"
+            android:textSize="@dimen/_15sdp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+            android:layout_gravity="center"
+            app:cardCornerRadius="@dimen/_10sdp"
+        android:elevation="@dimen/_20sdp">
+
+    <androidx.core.widget.NestedScrollView
+                         android:background="@color/black"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content">
+
+                         <androidx.recyclerview.widget.RecyclerView
+                             android:id="@+id/stories_bar"
+                             android:layout_width="match_parent"
+                             android:layout_height="30dp">
+
+                         </androidx.recyclerview.widget.RecyclerView>
+
+                     </androidx.core.widget.NestedScrollView>
+                     </androidx.core.widget.NestedScrollView>
+    </androidx.cardview.widget.CardView>-->
+            <androidx.recyclerview.widget.RecyclerView
+                         android:id="@+id/postsRv"
+                         android:background="@color/black"
+                         android:layout_width="match_parent"
+                android:backgroundTint="#F5F6FB"
+                         android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                     </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
